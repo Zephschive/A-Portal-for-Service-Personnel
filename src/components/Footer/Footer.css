@@ -1,0 +1,88 @@
+.footer{
+    background-color: var(--background-color) ;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.foot_wrap{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 15px 0px 15px ;
+}
+
+.first_side,
+.middle_side,
+.last_side
+{
+    color:#fff;
+    width:100%;
+    
+}
+
+.middle_side {
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-radius: 2px 2px 2px 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 100px;
+    padding-bottom: 30px;
+}
+
+.Logos_top img{
+    width: 8rem;
+    height: 3rem;
+}
+
+.slogan{
+    font-family: "Sofia Sans", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    padding-top: 5%;
+}
+
+.middle_side h2{
+    letter-spacing: 5px;
+    font-size: 3rem;
+    font-family: "Sofia Sans", serif;
+    font-weight: 900;
+}
+
+.footer_list{
+    display: flex;
+    column-gap: 78.7px;
+    align-items: center;
+}
+
+
+.footer_links_1{
+    padding-top: 10px;
+}
+
+
+.footer_links_2{
+    padding-top: 16px;
+}
+
+
+li.footer_item{
+    font-size: 20px;
+    transition: ease 0.2s;
+    
+}
+
+ul.footer_links{
+    column-gap: 40px;
+}
+
+li.footer_item:hover{
+    scale: 1.1;
+
+}
+
+.last_side h2{
+    display: flex;
+    justify-content: center;
+    
+}
