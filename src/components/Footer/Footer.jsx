@@ -93,11 +93,18 @@ const Footer = () => {
             <Col lg='4' md='6' className='last_side'>
 
             <h2>Contact Us</h2>
-            <p>
+
+            <div className="contact_us_cont"> <p className=''> 
               No. 42, 4th Close, Airport Res. Area, Accra
             </p>
 
-            
+            <p>+233 544 323 020 </p>
+           <p> info@getfund.gov.gh</p>
+</div>
+
+
+           
+
             </Col>
           </div>
             
