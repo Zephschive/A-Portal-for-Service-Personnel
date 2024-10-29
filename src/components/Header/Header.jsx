@@ -41,18 +41,44 @@ const Header = () => {
     }
   };
 
+
+  const WelcomeRef = useRef(null);
+
+
+  const stickyHeaderFunc = () => {
+    window.addEventListener('scroll', () => {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        WelcomeRef.current.classList.add('d-xl-none');
+      } else {
+        WelcomeRef.current.classList.remove('d-xl-none');
+      }
+    });
+  };
+
+  
+
   useEffect(() => {
+
+    stickyHeaderFunc();
+
+  
+    
     document.addEventListener('click', handleClickOutside, true);
     return () => {
       document.removeEventListener('click', handleClickOutside, true);
+
+      window.removeEventListener('scroll', stickyHeaderFunc);
     };
-  }, []);
+  },
+  
+  
+  []);
 
   return (
-    <header className="header" ref={headerRef}>
+    <header className="header sticky-lg-top" ref={headerRef}>
       <Container>
-        <Row>
-          <div className="nav_wrapper">
+        <Row >
+          <div className="nav_wrapper ">
             <div className="Getfund-logo">
               <img src={Getfundlogo} alt="" />
             </div>
@@ -89,7 +115,7 @@ const Header = () => {
         </Row>
         <Row>
 
-          <div className="Welcome-bar text-center d-flex align-items-center justify-content-center display-3 text-white d-none d-lg-block d-xl-block shadow  rounded">
+          <div className="Welcome-bar text-center d-flex align-items-center justify-content-center display-3 text-white d-none d-lg-block d-xl-block shadow  rounded" ref={WelcomeRef}>
           Welcome to the Getfund NSS Portal 
 
 
