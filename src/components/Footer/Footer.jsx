@@ -48,7 +48,7 @@ const Footer = () => {
 
 
   return <footer className="footer">
-    <Container>
+    <Container className='Container'>
         <Row className='align-items-center'>
           <div className="foot_wrap">
           <Col lg='4' md='6' className='first_side'>

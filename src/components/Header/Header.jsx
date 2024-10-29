@@ -87,6 +87,14 @@ const Header = () => {
             </div>
           </div>
         </Row>
+        <Row>
+
+          <div className="Welcome-bar text-center d-flex align-items-center justify-content-center display-3 text-white d-none d-lg-block d-xl-block shadow  rounded">
+          Welcome to the Getfund NSS Portal 
+
+
+          </div>
+        </Row>
       </Container>
     </header>
   );
